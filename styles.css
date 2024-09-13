@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-dark: rgb(29, 7, 7);
+    --color-medium: rgb(66, 1, 1);
+    --color-acento: rgb(241, 212, 44);
+    --color-claro: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
+body,
+button {
+    font-family: "SUSE", sans-serif;
+}
+
+.container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    font-size: 10rem;
+    color: var(--color-acento);
+    /* text-shadow: -0.8rem 0.6rem 0 var(--color-dark), -1rem 1rem 0 rgb(255, 255, 255); */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    height: 200px;
+
+}
+
+#boton-conteo,
+#boton-random {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-medium);
+    background-color: var(--color-acento);
+    border: none;
+    border-radius: 1rem;
+}
+
+#boton-conteo:hover {
+    background-color: var(--color-claro);
+}
+
+#boton-conteo:active {
+    background-color: var(--color-claro);
+}
+
+#boton-random {
+    background-color: var(--color-dark);
+    border: 3px solid var(--color-acento);
+    color: var(--color-claro);
+    box-sizing: border-box;
+}
+
+#boton-random:hover {
+    background-color: var(--color-medium);
+}
+
+#boton-random:active {
+    background-color: var(--color-acento);
+    color: var(--color-dark);
+}
+
+hr {
+    margin: 1rem 0;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.categorias {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    overflow-x: visible;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 730px) {
+    .categorias {
+        justify-content: left;
+        overflow-x: scroll;
+    }
+}
+
+.categorias>div {
+    background-color: var(--color-medium);
+    min-width: 200px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.categorias>div>h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+li {
+    list-style: none;
+    line-height: 2rem;
+    border-top: 1px solid gray;
+    color: var(--color-claro);
+}
