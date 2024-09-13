@@ -52,6 +52,9 @@ function contar() {
     const random = Math.floor(Math.random() * (800 - 100)) + 100
     loopConteo = setInterval(sumaMental, random)
     function sumaMental() {
+        if (conteo == 26) {
+            conteo = -1
+        }
         conteo = conteo + 1
         console.log(conteo);
     }
