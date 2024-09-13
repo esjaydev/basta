@@ -35,6 +35,7 @@ button {
     margin-bottom: 1rem;
     text-transform: uppercase;
     height: 200px;
+    letter-spacing: -3pt;
 
 }
 
